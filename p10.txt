@@ -1,0 +1,56 @@
+menggunakan rest api
+
+kalo ejs itu monolithic, semuanya dalam satu project yang sama
+
+kalo microservice jadi ada api" sendiri yang terpisah, backendnya utk payment, utk search itu berbeda. perusahaan gede jadi bisa dipecah", punya server beda, punya databasenya beda, juga bisa buat mobile, dll, bisa konek ke microservice yg berbeda. project kecil pake monolithic, kalo perusahaan besar itu microservice architecture. 
+
+rest api: req data ke db, returnnya json. frontnya bisa android, chrome, etc smua platform bs akses. rest api pake web, returnnya json, bukan html. 
+
+selain rest api, buat microservice bisa pake gRPC. biasnya gRPC pakenya di game, lebih ribet.
+
+kalo rest itu dipanggil oleh backend
+kalo gRPC itu kayak manggil function, tapi ke server lain
+
+di tokped juga ada yang gRPC ada yang rest. 
+npm init
+
+npm install --save bcrypt body-parser celebrate cors dotenv express express-async-errors express-jwt joi jsonwebtoken method-override moment multer passport passport-jwt uuid
+
+npm install --save-dev nodemon eslint
+^bisa autoreload pake nodemon, --save-dev cuman buat development doang, buat servernya ga ke publish. jadi biar pas kita salah, save ga lgsg ke publish
+
+  "scripts": {
+    "dev":"nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+jadi tinggal npm run dev, jalan yang ada di dev
+
+eslint: enforce style coding tertentu
+
+linter itu tersedia distiap bahasa, install di extensions
+
+npx itu npm execute, runnya di local
+npx eslint --init
+
+enforce coding style
+javascript modules
+none framework
+no typescript
+runs on node
+guide
+airbnb
+json
+yes
+npm
+yes
+
+tambah di eslintrc json
+"rules": {
+      "linebreak-style": 0
+    }
+
+kalo pake . itu hidden
+
+.
+
